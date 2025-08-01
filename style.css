@@ -1,0 +1,69 @@
+body {
+    font: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: purple;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    width: 8em;
+    aspect-ratio: 2 / 0.8;
+    cursor: pointer;
+}
+
+#timer-output {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    color: #000;
+}
+
+#timer-stop-btn {
+    margin-top: 1em;
+}
+
+#warning {
+    display: none;
+    margin: 45px auto;
+    font: 1em sans-serif;
+    color: red;
+    animation: warningPulse 1500ms ease-in-out infinite;
+}
+
+#stopwatch-output {
+    font: 3em sans-serif;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+}
+
+#stopwatch-stop-btn {
+    margin-top: 1em;
+}
+
+.warning-active {
+    color: red;
+    animation: warningPulse 1500ms ease-in-out infinite;
+}
+
+@keyframes warningPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
